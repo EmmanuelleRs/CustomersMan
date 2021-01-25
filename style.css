@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    background-color: ghostwhite;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > div{
+    height: 90%;
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+.side1{
+    flex: 2;
+    background-color: white;
+}
+.side2{
+    flex: 1;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+.formfield{
+    width: 100%;
+    margin:  2rem auto;
+    margin: 3rem 0;
+}
+
+.formfield label{
+    color: #333333;
+}
+
+.formfield input[type="text"], .formfield input[type="email"], .formfield input[type="date"], .formfield select{
+    width: 40%;
+    padding: .5rem 1rem;
+    display: block;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: #FCFCFC
+
+}
+
+.formfield input:focus{
+    border-bottom:  solid 3px royalblue;
+    background-color: transparent;
+
+}
+
+.button{
+    width:200px;
+    padding: .5rem ;
+    background-color: royalblue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+.client{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: solid 3px royalblue;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="side1">
+                <form id="form"> 
+                    <h1>Agregar un Cliente</h1>
+                    <div class="formfield">
+                        <label>Nombre</label><br>
+                        <input name="firstname" type="text" placeholder="Nombre(s)">
+                        <input name="lastname" type="text" placeholder="Apellidos">
+                    </div>
+                    <div class="formfield">
+                        <label>Género</label><br>
+                        <input type="radio" name="gender" value="m"> Masculino
+                        <input type="radio" name="gender" value="f"> Femenino
+                    </div>
+                    <div class="formfield">
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" name="birth">
+                    </div>
+                    <div class="formfield">
+                        <label>Email</label><br>
+                        <input name="email" type="email" placeholder="Tu correo eléctronico">
+                    </div>
+                    <div class="formfield">
+                        <label>Teléfono</label><br>
+                        <input name="tel" type="email" placeholder="+52 55 5555 5555">
+                    </div>
+                    <div class="formfield">
+                        <label>Estado Civil</label>
+                        <select name="status">
+                            <option value="">-- Seleccione --</option>
+                            <option value="soltero">Soltero</option>
+                            <option value="casado">Casado</option>
+                            <option value="viudo">Viudo</Vption>
+                        </select>
+                    </div>
+                    <div class="formfield">
+                        <label>Preferencias</label><br><br>
+                        <input type="checkbox" name="preference" value="preferencia1"> Preferencia 1 <br>
+                        <input type="checkbox" name="preference" value="preferencia2"> Preferencia 2<br>
+                        <input type="checkbox" name="preference" value="preferencia3"> Preferencia 3<br>
+                    </div>
+                    <button id="btn" class="button" type="submit">Agregar</button>
+                </form>
+            </div>
+            <div class="side2"></div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
